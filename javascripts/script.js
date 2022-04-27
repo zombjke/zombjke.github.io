@@ -1,5 +1,14 @@
 window.onload = function(){
-   window.innerWidth >= 500 ? createBody('pc') : createBody('mobile')
+    let userAgentInfo = navigator.userAgent;
+    let Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
+    let flag = true;
+        for (let i = 0; i < Agents.length; i++) {
+            if (userAgentInfo.indexOf(Agents[i]) > 0) {
+                flag = false;
+                break;
+            }
+        }
+    flag ? createBody('pc') : createBody('mobile');
 }    
 /**draw roadmap */
 function createRoadMap(){
