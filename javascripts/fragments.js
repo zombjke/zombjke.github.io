@@ -410,7 +410,7 @@ const pcBody = `<div id="title-back" class="back">
 </div>
 </div>`;
 const forPic = 
-`<div id="forPic">
-<img src="./images/roadmap_small.jpg" alt="roadmap" onclick="createRoadMap()">
+`<div id="forPic" onclick="createRoadMap()">
+<img src="./images/roadmap_small.jpg" alt="roadmap" >
 </div>
 <div id="toBig" onclick="createRoadMap()"><span>Click to zoom</span></div>`;

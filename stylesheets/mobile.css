@@ -25,6 +25,7 @@ body{
     font-family: "Graphik-Medium";
 }
 #forPic{
+    background-image: url('..images/roadmap_small.jpg');
     display: flex;
     justify-content: center;
 }
