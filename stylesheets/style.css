@@ -33,12 +33,12 @@ a:active{
 .upper{
     font-family: Graphik-Black;
     text-transform: uppercase;
-    font-size: 50px;
+    
     color: rgb(1, 255, 86);
 }
 .little{
     font-family: Graphik-Light;
-    font-size: 30px;
+   
     color: white;
 }
 
@@ -56,12 +56,12 @@ a:active{
 }
 .header-software, .header-additional{
     font-family: "Graphik-Medium";
-    font-size: 22px;
+    
     margin-right: 20px;
     color: rgb(1, 255, 86);
 }
 .header-additional{
-    font-size: 18px;
+    
     
 }
 #detailBody ul{
@@ -76,6 +76,6 @@ a:active{
     margin-left: 5px;
     margin-top: 2px;
     color: rgb(1, 255, 86);
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
