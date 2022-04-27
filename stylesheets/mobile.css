@@ -1,4 +1,4 @@
-@media screen and (max-width: 499px){
+
 body{
     background: radial-gradient(farthest-corner at 90px 90px,rgb(68, 97, 105) 3%, rgb(3, 10, 12) 100%);
 
@@ -219,5 +219,4 @@ body{
     flex-grow: 1;
     margin-top: 1vh;
     align-content: center;
-}
 }
