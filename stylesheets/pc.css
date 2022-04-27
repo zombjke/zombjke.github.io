@@ -1,0 +1,95 @@
+.title:hover{
+    background-color: rgb(88, 43, 43);
+}
+
+#title-detail:hover{
+    background-color: rgb(12, 15, 24);
+}
+#title-about{
+    text-align: right;
+    padding-right: 10px;
+}
+#title-software{
+    text-align: left;
+    padding-left: 5px;
+    display: grid;
+    align-items: end;
+}
+#title-additional{
+    display: grid;
+    align-items: center;
+}
+#title-road{
+    display: grid;
+    align-items: center;
+}
+#roadmap {
+    margin-top: 70px;
+    margin-left: 10px;
+}
+#ofknow{
+    margin-top: -250px;
+    margin-left: 10px;
+}
+#preferred{
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 230px;
+}
+#software{
+ margin-top: -100px;   
+}
+#additional{
+    font-size: 42px;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: -200px;
+}
+#knowledge{
+    margin-top: 120px;
+    margin-left: 10px;
+}
+
+#detail{
+    margin-right: 75px;
+    font-size: 40px;
+}
+#detailBody{
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
+    margin-right: 10px;
+    max-height: 580px;
+    min-height: 580px;
+    overflow: hidden;
+}
+#detailBody:hover{
+    overflow: auto;
+    margin-right: 9px;
+}
+.smallLi{
+    font-size: 17.5px;
+}
+p{
+    text-align: right;
+    margin-left: 50px;
+    padding-right: 3px;
+    font-family: "Graphik-Light";
+    font-size: 17px;
+}
+hr{
+    margin-right: 20px;
+    width: 175px;
+    border: 1px solid rgb(1, 255, 86);
+}
+#header-useful{
+    margin-right: 10px;
+}
+.little{
+    padding-top: -10px;
+    padding-right: 5px;
+}
+body{
+    background: linear-gradient(to top, black, 80%, rgb(44, 62, 85));
+    background-size: 100%;
+}   

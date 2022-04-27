@@ -1,0 +1,222 @@
+@media screen and (max-width: 499px){
+body{
+    background: radial-gradient(farthest-corner at 90px 90px,rgb(68, 97, 105) 3%, rgb(3, 10, 12) 100%);
+
+}
+#wrapper{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    
+}
+#toBig{
+    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(1, 255, 86);
+    border-radius: 7px;
+    color: white;
+    margin-left: 4vw;
+    width: 85vw;
+    height: 5vh;
+}
+#toBid span{
+    font-family: "Graphik-Medium";
+}
+#forPic{
+    display: flex;
+    justify-content: center;
+}
+#forPic img{
+    border: 2px solid white;
+    position: relative;
+    max-width: 85vw;
+    
+    
+    
+}
+#roadMapId{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin-left: -12.5em;
+    min-width: 800px;
+    min-height: 400px; 
+    max-width: 800px;
+    max-height: 400px;         
+    -webkit-transform: rotate(-90deg) scale(0.8) ;
+    -moz-transform: rotate(-90deg) scale(0.8) ;
+    -o-transform: rotate(-90deg) scale(0.8) ;
+    -ms-transform: rotate(-90deg) scale(0.8);
+    transform: rotate(-90deg) scale(0.8);
+}
+.back{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    max-width: 100%;
+    width: 100%;
+    
+}
+.back-col{
+    display: flex;
+    margin: 1vh 5vw 5vh 1vw;
+    min-height: 95vh;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content:space-around;
+   
+}
+.title{
+    position: relative;
+    flex-grow: 1;
+    justify-content: center;
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    margin-top: 2%;
+    max-width: 100%;
+    min-height: 5vh;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: rgb(12, 15, 24);
+    transition: all 0.5s linear;
+}
+
+.for-photo{
+    display: block;
+    position: absolute;
+    width: calc(100vw / 3.5);
+    max-height: 1vh;
+    margin-left: 1vw;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.upper{
+    transition: all 0.5s ease-in;
+    display: flex;
+    position: absolute;
+    align-self: center;
+    margin-top: 0;
+    font-size: 40px;
+}
+.little{
+    transition: all 0.5s ease-in;
+    opacity: 100%;
+    display: flex;
+    align-self: center;
+    position: absolute;
+    font-size: 20px;
+    margin-top: 0;
+}
+#title-road
+{    
+    margin-top: 0;
+    
+}
+
+#ofknow{
+    margin-top: 1.5em;
+    margin-left: 3em;
+}
+
+#knowledge{
+  margin-top: 1.5em;
+  margin-left: -3em;
+}
+
+#preferred{
+    margin-top: -1.7em;
+    margin-left: 4.5em;
+}
+
+#myself{
+    margin-top: 1.5em;
+}
+
+#detailBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1vh;
+    color: white;
+    text-align: right;
+    overflow: auto;
+    position: relative;
+    align-self: center;
+    max-width: 98%;
+    width: 98%;
+    max-height: 95%;
+    animation: createDetail 0.3s forwards ease-out;
+
+}
+#detailBody hr{
+    width: 45vw;
+    border: 1px solid rgb(1, 255, 86);
+}
+#detailBody p{
+    
+        text-align: center;
+        margin-right: 2vw;
+        font-family: "Graphik-Light";
+        font-size: 17px;
+    
+}
+#header-useful{
+    margin-right: 10px;
+}
+@keyframes createDetail {
+    0%{
+        display: none;
+        opacity: 0%;
+    }
+    100%{
+        display: flex;
+        opacity: 100%;
+    }
+}
+.upper-open{
+    position: relative;
+    font-size: 20pt !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    align-self: center !important;
+}
+.little-open{
+    position: relative;
+    display: flex !important; 
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    align-self: center !important;
+}
+
+.little-close{
+    opacity: 0%;
+}
+.title-open{
+    justify-content: flex-start;
+    flex-grow: 15 !important;
+}
+.title-close{
+    flex-grow: 1 !important;
+}
+.selector{
+    align-self:center;
+    justify-content: stretch;
+    display:flex;
+    flex-direction: row;
+    max-height: 5vh;
+    max-width: 100%;
+    position: relative;
+    flex-grow: 1;
+    margin-top: 1vh;
+    align-content: center;
+}
+}

@@ -1,0 +1,513 @@
+#logo-roadmap{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    text-transform: uppercase;
+    font-family: "Graphik-Black";
+    font-size: 35px;
+     color: rgb(1, 255, 86); 
+}
+.dotsvg{    
+    position: absolute;
+    top: 210px;
+    left: 50px;
+    width: 8px;
+    height: 8px;
+    animation: stroke forwards linear;
+}
+#dotsvg-1{
+    offset-path: path('M0 5 h93 v67 h85 v63 h140');
+    animation-duration: 2.362s;
+}
+#dotsvg-2{
+    offset-path: path('M0 5 h58 v-58 h110 v-78 h140');
+    animation-duration: 2.362s;
+}
+#dotsvg-3{
+    offset-path: path('M0 5 h186 v-60 h70');
+    animation-duration: 1.75s;
+}
+#dotsvg-4{
+    offset-path: path('M0 5 h230 v52 h40');
+    animation-duration: 1.77s;
+}
+#dotsvg-5{
+    offset-path: path('M0 5 h410 v45 h114 v45 h30');
+    animation-duration: 3.5s;
+}
+#dotsvg-7{
+    offset-path: path('M0 5 h400 v-80 h110');
+    animation-duration: 3.22s;
+}
+@keyframes stroke {
+    0% {offset-distance: 0%;}
+    100% {offset-distance: 100%;}
+}
+.smallBox{
+    opacity: 0;
+    margin-left: 5px;
+    position: relative;
+    width: 44px;
+    max-width: 44px;
+    height: 58px;
+    max-height: 58px;
+}
+@keyframes blink{
+    100% {
+        opacity: 100%;
+    }
+}
+.topBox{
+ background-color: rgb(22, 35, 43);
+ position: relative;
+ margin-top: 0px;
+ height: 53px;
+ width: 100%;
+ border: 0.5px solid black;
+ border-radius: 3.2px;
+ border-top: 0.2px solid rgba(134, 134, 134, 0.541) ;
+ border-left: 0.2px solid rgba(134, 134, 134, 0.541) ;
+}
+.bottomBox{
+    opacity: 0%;
+    background-color: rgb(73, 73, 73);
+    position: relative;
+    margin-top: 2px;
+    left: 2.9px;
+    width: 0px;
+    height: 3px;
+    max-width: 38px;
+    border: 0.5px solid rgb(70, 70, 70);
+    border-radius: 0.5px;
+}
+#html-box{
+    animation: blink 0.2s forwards ease-in;
+    animation-delay: 800ms;
+}
+#htmlprogressBar{
+    animation: progress-html 1.5s forwards ease-in;
+    animation-delay: 800ms;
+}
+@keyframes progress-html {
+    5% {
+        opacity: 100%;
+        background-color: #ff0000;
+    }
+    100% {
+        opacity: 100%;
+        width: 38px;
+        background-color: chartreuse;
+    }
+}
+#css-box{
+    animation: blink 0.2s forwards ease-in;
+    animation-delay: 1s;
+}
+#cssprogressBar{
+    animation: progress-css 1.5s forwards ease-in;
+    animation-delay: 1s;
+}
+@keyframes progress-css {
+    5% {
+        opacity: 100%;
+        background-color: #ff0000;
+    }
+    100% {
+        opacity: 100%;
+        width: 30.5px;
+        background-color: rgb(166, 255, 0);
+    }
+}
+#bootstrap-box{
+    animation: blink 0.2s forwards ease-in;
+    animation-delay: 1700ms;
+}
+#bootstrapprogressBar{
+    animation: progress-bootstrap 1.5s forwards ease-in;
+    animation-delay: 1700ms;
+}
+@keyframes progress-bootstrap {
+    5% {
+        opacity: 100%;
+        background-color: #ff0000;
+    }
+    100% {
+        opacity: 100%;
+        width: 26.6px;
+        background-color: rgb(229, 255, 0);
+    }
+}
+#sass-box{
+    animation: blink 0.2s forwards ease-in;
+    animation-delay: 2200ms;
+}
+#sassprogressBar{
+    animation: progress-sass 1.5s forwards ease-in;
+    animation-delay: 2200ms;
+}
+@keyframes progress-sass {
+    5% {
+        opacity: 100%;
+        background-color: #ff0000;
+    }
+    100% {
+        opacity: 100%;
+        width: 19.8px;
+        background-color: rgb(255, 208, 0);
+    }
+}
+#wordpress-box{
+    animation: blink 0.2s forwards ease-in;
+    animation-delay: 1700ms;
+}
+#wordpressprogressBar{
+    animation: progress-wordpress 1.5s forwards ease-in;
+    animation-delay: 1700ms;
+}
+@keyframes progress-wordpress {
+    5% {
+        opacity: 100%;
+        background-color: #ff0000;
+    }
+    100% {
+        opacity: 100%;
+        width: 30.4px;
+        background-color: rgb(157, 255, 0);
+    }
+}
+#woo-box{
+    animation: blink 0.2s forwards ease-in;
+    animation-delay: 2200ms;
+}
+#wooprogressBar{
+    animation: progress-woo 1.5s forwards ease-in;
+    animation-delay: 2200ms;
+}
+@keyframes progress-woo {
+    5% {
+        opacity: 100%;
+        background-color: #ff0000;
+    }
+    100% {
+        opacity: 100%;
+        width: 22.8px;
+        background-color: rgb(229, 255, 0);
+    }
+}
+#mysql-box{
+    animation: blink 0.2s forwards ease-in;
+    animation-delay: 1500ms;
+}
+#mysqlprogressBar{
+    animation: progress-mysql 1.5s forwards ease-in;
+    animation-delay: 1500ms;
+}
+@keyframes progress-mysql {
+    5% {
+        opacity: 100%;
+        background-color: #ff0000;
+    }
+    100% {
+        opacity: 100%;
+        width: 32.3px;
+        background-color: rgb(102, 255, 0);
+    }
+}
+#git-box{
+    animation: blink 0.2s forwards ease-in;
+    animation-delay: 1500ms;
+}
+#gitprogressBar{
+    animation: progress-git 1.5s forwards ease-in;
+    animation-delay: 1500ms;
+}
+@keyframes progress-git {
+    5% {
+        opacity: 100%;
+        background-color: #ff0000;
+    }
+    100% {
+        opacity: 100%;
+        width: 28.5px;
+        background-color: rgb(208, 255, 0);
+    }
+}
+#js-box{
+    animation: blink 0.2s forwards ease-in;
+    animation-delay: 1700ms;
+}
+#jsprogressBar{
+    animation: progress-js 1.5s forwards ease-in;
+    animation-delay: 1700ms;
+}
+@keyframes progress-js {
+    5% {
+        opacity: 100%;
+        background-color: #ff0000;
+    }
+    100% {
+        opacity: 100%;
+        width: 33.44px;
+        background-color: rgb(72, 255, 0);
+    }
+}
+#node-box{
+    animation: blink 0.2s forwards ease-in;
+    animation-delay: 2700ms;
+}
+#nodeprogressBar{
+    animation: progress-node 1.5s forwards ease-in;
+    animation-delay: 2700ms;
+}
+@keyframes progress-node {
+    5% {
+        opacity: 100%;
+        background-color: #ff0000;
+    }
+    100% {
+        opacity: 100%;
+        width: 19.1px;
+        background-color: rgb(200, 255, 0);
+    }
+}
+#express-box{
+    animation: blink 0.2s forwards ease-in;
+    animation-delay: 3000ms;
+}
+#expressprogressBar{
+    animation: progress-express 1.5s forwards ease-in;
+    animation-delay: 3000ms;
+}
+@keyframes progress-express {
+    5% {
+        opacity: 100%;
+        background-color: #ff0000;
+    }
+    100% {
+        opacity: 100%;
+        width: 16.72px;
+        background-color: rgb(255, 230, 0);
+    }
+}
+#ts-box{
+    animation: blink 0.2s forwards ease-in;
+    animation-delay: 2500ms;
+}
+#tsprogressBar{
+    animation: progress-ts 1.5s forwards ease-in;
+    animation-delay: 2500ms;
+}
+@keyframes progress-ts {
+    5% {
+        opacity: 100%;
+        background-color: #ff0000;
+    }
+    100% {
+        opacity: 100%;
+        width: 8.36px;
+        background-color: rgb(255, 166, 0);
+    }
+}
+#vue-box{
+    animation: blink 0.2s forwards ease-in;
+    animation-delay: 3300ms;
+}
+#vueprogressBar{
+    animation: progress-vue 1.5s forwards ease-in;
+    animation-delay: 3300ms;
+}
+@keyframes progress-vue {
+    5% {
+        opacity: 100%;
+        background-color: #ff0000;
+    }
+    100% {
+        opacity: 100%;
+        width: 5px;
+        background-color: rgb(255, 94, 0);
+    }
+}
+#react-box,
+#redux-box,
+#vuex-box{
+    animation: another-blink 0.5s forwards ease-in;
+    animation-delay: 3500ms;
+}
+@keyframes another-blink{
+    100% {
+        opacity: 20%;
+    }
+}
+.svgBox{
+    position: relative;
+    padding-left: 5px;
+    padding-top: 0px;
+
+}
+.namesvg{
+   position: relative;
+   align-self: center;
+    font-size: 8pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    bottom: 2px;
+    text-align: center;
+    color: white;
+}
+#wordpressnamesvg, 
+#woonamesvg,
+#bootstrapnamesvg{
+    font-size: 8px;
+}
+#jsnamesvg,
+#tsnamesvg{
+    font-size: 9px;
+}
+#woonamesvg{
+    bottom: 8px;
+}
+.backplace{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    background: linear-gradient(to top left, rgb(24, 38, 46), 65%, rgb(40, 62, 75));
+    
+}
+
+.backgroundpath{
+    position: absolute;
+    left: 8%;
+    top: 21.7%;
+    width: 87.5%;
+    transform: scaleY(102%);
+    
+    fill: none;
+    stroke: url(#gradient);
+    stroke-width: 2px; 
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+    stroke-linejoin: round;
+    stroke-linecap:round;
+    animation-delay: 400ms;
+    animation: filling 5s forwards linear;
+}
+@keyframes filling{
+    100% {stroke-dashoffset: 0;}
+}
+.col{
+    position: relative;
+    display: inline-block;
+    top: 30px;
+    height: 288px;
+    max-height: 288px;
+    left: 160px;
+}
+#col-1{
+    width: 61px;
+    max-width: 61px
+}
+#col-2{
+    max-width: 61px;
+    width: 61px;
+}
+#col-3{
+    max-width: 55px;
+    width: 55px;
+}
+#col-4{
+    max-width: 64px;
+    width: 64px;
+}
+#col-5{
+    max-width: 58px;
+    width: 58px;
+}
+#col-6{
+    max-width: 79px;
+    width: 79px;
+}
+#col-7{
+    max-width: 74px;
+    width: 74px;
+}
+#col-8{
+    max-width: 99px;
+    width: 99px;
+}
+#col-9{
+    max-width: 49px;
+    width: 49px;
+}
+#html-box{
+    left: -20px;
+    top: 95px;
+}
+#mysql-box{
+    left: -7px;
+    top: 90px;
+}
+#css-box{
+    left: -10px;
+    top: 160px;
+}
+#wordpress-box{
+    top: 17px;
+    left: 15px;
+}
+#bootstrap-box{
+    top: 229px;
+    left: 17px;
+}
+#git-box{
+    top: 145px;
+    left: 7px;
+}
+#js-box{
+    top: 95px;
+    left: 21px;
+}
+#sass-box{
+    top: 172px;
+    left: 3px;
+}
+#woo-box{
+    top: 17px;
+    left: -4px;
+}
+#node-box,
+#express-box{
+    top: 75px;
+    left: 1px;
+}
+#ts-box{
+    top: 140px;
+    left: 1px;
+}
+#vue-box{
+    top: 185px;
+    left: 30px;
+}
+#react-box{
+    
+    top: 150px;
+    left: 5px;
+}
+#vuex-box{
+    
+    top: 185px;
+    left: 55px;
+}
+#redux-box{
+    top: 150px;
+    left: 10px;
+}
+.topBox:hover{
+    animation: light 0.1s forwards ease-in-out;
+}
+@keyframes light {
+    100%{
+        background-color: rgb(28, 53, 68);
+    }
+}

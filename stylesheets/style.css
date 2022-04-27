@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Graphik-Black";
+    src: url(/stylesheets/fonts/Graphik-Black.woff);
+}
+@font-face {
+    font-family: "Graphik-Light";
+    src: url(/stylesheets/fonts/Graphik-Light.woff);
+}
+@font-face {
+    font-family: "Graphik-Medium";
+    src: url(/stylesheets/fonts/Graphik-Medium.woff);
+}
+
+a:hover{
+    color: aqua;
+}
+a:link{
+    color: white;
+}
+a:visited{
+    color: cornflowerblue;
+}
+a:active{
+    color: aqua;
+}
+
+
+.for-photo svg{
+     fill: black; 
+}
+
+
+.upper{
+    font-family: Graphik-Black;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: rgb(1, 255, 86);
+}
+.little{
+    font-family: Graphik-Light;
+    font-size: 30px;
+    color: white;
+}
+
+#detailBody::-webkit-scrollbar{
+    position: absolute;
+    left: 10px;
+    width: 1px;
+    
+}
+#detailBody::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.26);
+    border-radius: 5px;
+    opacity: 0.5;
+    
+}
+.header-software, .header-additional{
+    font-family: "Graphik-Medium";
+    font-size: 22px;
+    margin-right: 20px;
+    color: rgb(1, 255, 86);
+}
+.header-additional{
+    font-size: 18px;
+    
+}
+#detailBody ul{
+    font-family: "Graphik-Light";
+    font-size: 20px;
+    list-style-type: none;
+}
+#detailBody li::after{
+    content: "\220E";
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 2px;
+    color: rgb(1, 255, 86);
+    font-size: 20px;
+}
+

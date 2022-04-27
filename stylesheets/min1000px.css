@@ -1,0 +1,63 @@
+@media screen and (min-width: 1000px){
+    #wrapper{
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        transform: scale(1);
+    }
+    #roadMapId{
+        z-index: 2;
+        position: absolute;
+        display: flex;
+        justify-self: center;
+        margin-top: 10%;
+        transform: scale(1.5);
+        min-width: 800px;
+        min-height: 400px; 
+        max-width: 800px;
+        max-height: 400px; 
+    }
+    .back{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        
+        top: 10%; 
+    }
+    .back-col{
+        width: 320px;
+    }
+    .for-photo{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-self: center;
+        margin-top: 1.5%;
+        max-width: 515px;
+        min-width: 515px;
+        min-height: 515px;
+        max-height: 515px;
+    }
+    .title{
+        min-width: 270px;
+        min-height: 332px;
+        max-height: 332px;
+        border: 1px solid black;
+        border-radius: 12px;
+        background-color: rgb(12, 15, 24);
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    #title-detail{
+        min-width: 270px;
+        min-height: 685px;
+        max-height: 685px;
+        overflow: hidden;
+        text-align: right;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+}
