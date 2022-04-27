@@ -189,7 +189,7 @@ body{
 }
 
 .little-close{
-    opacity: 0%;
+    opacity: 0% !important;
 }
 .title-open{
     justify-content: flex-start;
