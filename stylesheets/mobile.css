@@ -101,26 +101,24 @@ body{
     overflow: hidden;
 }
 .upper{
-    
     display: flex;
     position: absolute;
     align-self: center;
     margin-top: 0;
-    font-size: 7rem;
+    font-size: 7rem !important;
 }
 .little{
-    
     opacity: 100%;
     display: flex;
     align-self: center;
     position: absolute;
-    font-size: 3.5rem;
+    font-size: 3.5rem !important;
     margin-top: 0;
 }
 #title-road
 {    
     margin-top: 0;
-    
+
 }
 
 #ofknow{
@@ -163,12 +161,16 @@ body{
     border: 1px solid rgb(1, 255, 86);
 }
 #detailBody p{
-    
         text-align: center;
         margin-right: 2vw;
         font-family: "Graphik-Light";
-        font-size: 17px;
+        font-size: 1.5em;
     
+}
+#detailBody ul{
+
+    font-size: 2em;
+
 }
 #header-useful{
     margin-right: 10px;
@@ -209,4 +211,8 @@ body{
     flex-grow: 1;
     margin-top: 1vh;
     align-content: center;
+}
+.header-software, .header-additional{
+    font-size: 3rem;
+    margin-right: 20px;
 }
