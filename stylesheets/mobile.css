@@ -106,7 +106,7 @@ body{
     position: absolute;
     align-self: center;
     margin-top: 0;
-    font-size: 10rem;
+    font-size: 8rem;
 }
 .little{
     transition: all 0.5s ease-in;
@@ -114,7 +114,7 @@ body{
     display: flex;
     align-self: center;
     position: absolute;
-    font-size: 5rem;
+    font-size: 4rem;
     margin-top: 0;
 }
 #title-road
