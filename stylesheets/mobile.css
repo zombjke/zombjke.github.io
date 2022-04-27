@@ -25,7 +25,7 @@ body{
     font-family: "Graphik-Medium";
 }
 #forPic{
-    background-image: url('https://zombjke.github.io/images/roadmap_small.jpg');
+    background-image: url('/images/roadmap_small.JPG');
     display: flex;
     justify-content: center;
     max-width: 85vw;
