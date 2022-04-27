@@ -55,12 +55,12 @@ a:active{
 }
 .header-software, .header-additional{
     font-family: "Graphik-Medium";
-    font-size: 22px;
+    font-size: 2em;
     margin-right: 20px;
     color: rgb(1, 255, 86);
 }
 .header-additional{
-    font-size: 18px;
+    font-size: 2em;
     
 }
 #detailBody ul{
