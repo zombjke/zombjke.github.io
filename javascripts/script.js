@@ -1,6 +1,6 @@
 window.onload = function(){
     let userAgentInfo = navigator.userAgent;
-    let Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
+    let Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone"];
     let flag = true;
         for (let i = 0; i < Agents.length; i++) {
             if (userAgentInfo.indexOf(Agents[i]) > 0) {
