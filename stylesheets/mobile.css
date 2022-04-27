@@ -29,6 +29,7 @@ body{
     display: flex;
     justify-content: center;
     max-width: 85vw;
+    height: 25vh;
 }
 #forPic img{
     border: 2px solid white;
