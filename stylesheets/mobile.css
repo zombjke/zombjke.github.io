@@ -172,6 +172,9 @@ body{
     font-size: 2em;
 
 }
+#detailBody li::after{
+    font-size: 2em;
+}
 #header-useful{
     margin-right: 10px;
 }
