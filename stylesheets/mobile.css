@@ -173,7 +173,7 @@ body{
 
 }
 #detailBody li::after{
-    font-size: 2em;
+    font-size: 1em;
 }
 #header-useful{
     margin-right: 10px;
