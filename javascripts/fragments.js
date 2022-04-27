@@ -354,7 +354,7 @@ const mobileBody =
 `<div id="title-back" class="back">
 <div id="back-col-mobile" class="back-col">
 <div id="title-road" class="title" onclick="createDetail_(4)">
-   <span id="roadmap" class="upper">roadmap</span><br>
+   <span id="roadmap" class="upper">roadmap</span>
    <span id="ofknow" class="little">of knowledge</span>
 </div>
 <div id="title-additional" class="title" onclick="createDetail_(2)">
