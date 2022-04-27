@@ -173,16 +173,6 @@ body{
 #header-useful{
     margin-right: 10px;
 }
-@keyframes createDetail {
-    0%{
-        display: none;
-        opacity: 0%;
-    }
-    100%{
-        display: flex;
-        opacity: 100%;
-    }
-}
 .upper-open{
     position: relative;
     font-size: 5rem !important;
