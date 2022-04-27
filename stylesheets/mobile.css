@@ -85,7 +85,7 @@ body{
     border: 1px solid black;
     border-radius: 12px;
     background-color: rgb(12, 15, 24);
-    transition: all 0.5s linear;
+   
 }
 
 .for-photo{
@@ -101,7 +101,7 @@ body{
     overflow: hidden;
 }
 .upper{
-    transition: all 0.5s ease-in;
+    
     display: flex;
     position: absolute;
     align-self: center;
@@ -109,7 +109,7 @@ body{
     font-size: 8rem;
 }
 .little{
-    transition: all 0.5s ease-in;
+    
     opacity: 100%;
     display: flex;
     align-self: center;
@@ -185,7 +185,7 @@ body{
 }
 .upper-open{
     position: relative;
-    font-size: 20pt !important;
+    font-size: 5rem !important;
     margin-top: 0 !important;
     margin-left: 0 !important;
     align-self: center !important;
