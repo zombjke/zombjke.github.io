@@ -411,6 +411,6 @@ const pcBody = `<div id="title-back" class="back">
 </div>`;
 const forPic = 
 `<div id="forPic">
-<img src="https://zombjke.github.io/images/roadmap_small.jpg" alt="roadmap" onclick="createRoadMap()">
+<img src="/images/roadmap_small.jpg" alt="roadmap" onclick="createRoadMap()">
 </div>
 <div id="toBig" onclick="createRoadMap()"><span>Click to zoom</span></div>`;
