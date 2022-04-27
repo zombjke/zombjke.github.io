@@ -154,17 +154,27 @@ function removeClass(elem){
         }
     }
 }
-function includeCSS(url){
+function includeCSS(url, media){
     let style = document.createElement('link');
     style.href = url;
     style.rel = "stylesheet";
+    style.media = media || ""
     document.head.appendChild(style);
 }
 function createBody(device){
     let wrap = document.getElementById('wrapper')
         switch (device) {
-            case 'pc': wrap.innerHTML = pcBody; includeCSS('/stylesheets/pc.css'); break;
-            case 'mobile': wrap.innerHTML = mobileBody; includeCSS('/stylesheets/mobile.css'); break;
+            case 'pc': {
+                wrap.innerHTML = pcBody; 
+                includeCSS('/stylesheets/pc.css');
+                includeCSS("/stylesheets/min1000px.css", "screen and (min-width: 1000px)");
+                includeCSS("/stylesheets/min768max999.css", "screen and (min-width: 768px) and (max-width: 999px)");
+                includeCSS("/stylesheets/min500max767.css", "screen and (min-width: 500px) and (max-width: 767px)");
+                break;}
+            case 'mobile': {
+                wrap.innerHTML = mobileBody; 
+                includeCSS('/stylesheets/mobile.css'); 
+                break;}
             default: wrap.innerHTML = pcBody; break;
         }
 }
