@@ -154,11 +154,17 @@ function removeClass(elem){
         }
     }
 }
+function includeCSS(url){
+    let style = document.createElement('link');
+    style.href = url;
+    style.rel = "stylesheet";
+    document.head.appendChild(style);
+}
 function createBody(device){
     let wrap = document.getElementById('wrapper')
         switch (device) {
-            case 'pc': wrap.innerHTML = pcBody; break;
-            case 'mobile': wrap.innerHTML = mobileBody; break;
+            case 'pc': wrap.innerHTML = pcBody; includeCSS('/stylesheets/pc.css'); break;
+            case 'mobile': wrap.innerHTML = mobileBody; includeCSS('/stylesheets/mobile.css'); break;
             default: wrap.innerHTML = pcBody; break;
         }
 }
