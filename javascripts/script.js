@@ -57,7 +57,7 @@ function createDetail(what){
         }
         detailBody.classList.add('anim-create');
         detailBody.scrollTop = "";
-        setTimeout(() => detailBody.classList.remove('anim-create'), 100);
+        setTimeout(() => detailBody.classList.remove('anim-create'), 500);
 }
 
 function createDetail_(what){
