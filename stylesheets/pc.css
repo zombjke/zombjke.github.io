@@ -55,7 +55,7 @@
     font-size: 40px;
 }
 #detailBody{
-    animation: create 0.5s forwards ease-out;
+    
     font-size: 20px;
     color: white;
     margin-top: 30px;
@@ -63,6 +63,9 @@
     max-height: 580px;
     min-height: 580px;
     overflow: hidden;
+}
+.anim-create{
+    animation: create 0.5s forwards ease-out;
 }
 #detailBody:hover{
     overflow: auto;
