@@ -100,7 +100,10 @@ body{
 @keyframes create {
     0%{
         margin-right: -15em;
-        opacity: 0;
+        opacity: 0%;
+    }
+    50%{
+        opacity: 0%;
     }
     100%{
         margin-right: 0.2em;
