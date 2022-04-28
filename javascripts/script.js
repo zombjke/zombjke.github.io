@@ -55,7 +55,9 @@ function createDetail(what){
             case 2: detailBody.innerHTML = additionalKnowledge; break;
             case 3: detailBody.innerHTML = aboutMyself; break;
         }
+        detailBody.classList.add('anim-create');
         detailBody.scrollTop = "";
+        setTimeout(detailBody.classList.remove('anim-create'), 2000);
 }
 
 function createDetail_(what){
