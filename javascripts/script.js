@@ -81,7 +81,7 @@ function selectMenu(id){
         removeClass();
     } else {
         selector.parentElement.innerHTML = selector.innerHTML;
-        removeClass(selector.parentElement);
+        removeClass(selector.parentElement.id);
         createSelector(id);
     }   
 
@@ -134,8 +134,8 @@ function changeClass(id){
         }       
     }
 }
-function removeClass(elem){
-    
+function removeClass(id){
+    let elem = document.getElementById(id);
     if (elem){
         console.log(elem);
         elem.classList.remove('title-open');
