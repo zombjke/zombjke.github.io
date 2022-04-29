@@ -1,3 +1,4 @@
+/**choose platform */
 window.onload = function(){
     let userAgentInfo = navigator.userAgent;
     let Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone"];
@@ -9,6 +10,32 @@ window.onload = function(){
             }
         }
     flag ? createBody('pc') : createBody('mobile');
+}
+/**drow body by device*/
+function createBody(device){
+    let wrap = document.getElementById('wrapper')
+        switch (device) {
+            case 'pc': {
+                wrap.innerHTML = pcBody; 
+                includeCSS('/stylesheets/pc.css');
+                includeCSS("/stylesheets/min1000px.css", "screen and (min-width: 1000px)");
+                includeCSS("/stylesheets/min768max999.css", "screen and (min-width: 768px) and (max-width: 999px)");
+                includeCSS("/stylesheets/min500max767.css", "screen and (min-width: 500px) and (max-width: 767px)");
+                break;}
+            case 'mobile': {
+                wrap.innerHTML = mobileBody; 
+                includeCSS('/stylesheets/mobile.css'); 
+                break;}
+            default: wrap.innerHTML = pcBody; break;
+        }
+}
+/**including styles on html function */
+function includeCSS(url, media){
+    let style = document.createElement('link');
+    style.href = url;
+    style.rel = "stylesheet";
+    style.media = media || ""
+    document.head.appendChild(style);
 }    
 /**draw roadmap */
 function createRoadMap(){
@@ -18,9 +45,10 @@ function createRoadMap(){
         map.innerHTML = roadmap;
         document.getElementById('wrapper').append(map);
         document.getElementById('title-back').style.filter = "blur(15px)";
-        document.addEventListener('click', function(event){cancelByClick(event, map)}, 2);
+        document.addEventListener('click', function(event){cancelByClick(event)}, 1);
     }
 }
+/**drow roadmap pic for mobile */
 function createRoadMapMobile(){
         let road = document.createElement('div');
         road.id = "smallRoadMap";
@@ -28,11 +56,6 @@ function createRoadMapMobile(){
         document.getElementById('title-road').append(road);
        
     
-}
-function closeRoadMap(){
-    document.getElementById('roadMapId').remove();
-    document.getElementById('title-back').style.filter = "";
-    document.removeEventListener('click', function(event){cancelByClick(event, map)}, 2);
 }
 /**close roadmap by click outside the block */
 function cancelByClick(event, map){
@@ -50,7 +73,13 @@ function cancelByClick(event, map){
         }
     }
 }
-/**filling detail*/
+/**close roadmap func */
+function closeRoadMap(){
+    document.getElementById('roadMapId').remove();
+    document.getElementById('title-back').style.filter = "";
+    document.removeEventListener('click', function(event){cancelByClick(event)}, 1);
+}
+/**filling detail /pc*/
 function createDetail(what){
     let detailBody = document.getElementById('detailBody');
         switch (what){
@@ -62,45 +91,7 @@ function createDetail(what){
         detailBody.scrollTop = "";
         setTimeout(() => detailBody.classList.remove('anim-create'), 500);
 }
-
-function createDetail_(what){
-        switch (what){
-            case 1: selectMenu('title-software'); break;
-            case 2: selectMenu('title-additional'); break;
-            case 3: selectMenu('title-about'); break;
-            case 4: selectMenu('title-road'); break;
-        }
-}
-
-
-
-function selectMenu(id){
-    let selector = document.getElementById('selector');
-    
-    if (!selector){
-        createSelector(id);
-    }else if (selector && selector.parentElement.id == id){
-        selector.parentElement.innerHTML = selector.innerHTML;
-        removeClass();
-    } else {
-        removeClass(selector.parentElement.id);
-        selector.parentElement.innerHTML = selector.innerHTML;
-        createSelector(id);
-    }   
-
-}
-function createSelector(id){
-    let tmp = document.getElementById(id).innerHTML;
-    document.getElementById(id).innerHTML = '';
-    let selector = document.createElement('div');
-    selector.id = "selector";
-    selector.className = "selector";
-    selector.innerHTML = tmp;
-    document.getElementById(id).append(selector);
-    changeClass(id);
-    setTimeout(() => fillDetail(id), 500);
-}
-
+/**filling detail /mobile */
 function fillDetail(id){
     let detail = document.createElement('div');
     detail.id = "detailBody";
@@ -113,6 +104,42 @@ function fillDetail(id){
         case 'title-about': detail.innerHTML = aboutMyself; addPhoto(); break;
     }
 }
+/**what's menu was selected /mobile */
+function createDetail_(what){
+        switch (what){
+            case 1: selectMenu('title-software'); break;
+            case 2: selectMenu('title-additional'); break;
+            case 3: selectMenu('title-about'); break;
+            case 4: selectMenu('title-road'); break;
+        }
+}
+/**adding selector div under description of buttons*/
+function selectMenu(id){
+    let selector = document.getElementById('selector');
+    if (!selector){
+        createSelector(id);
+    }else if (selector && selector.parentElement.id == id){
+        selector.parentElement.innerHTML = selector.innerHTML;
+        removeClass();
+    } else {
+        removeClass(selector.parentElement.id);
+        selector.parentElement.innerHTML = selector.innerHTML;
+        createSelector(id);
+    }   
+}
+/**drow selector */
+function createSelector(id){
+    let tmp = document.getElementById(id).innerHTML;
+    document.getElementById(id).innerHTML = '';
+    let selector = document.createElement('div');
+    selector.id = "selector";
+    selector.className = "selector";
+    selector.innerHTML = tmp;
+    document.getElementById(id).append(selector);
+    changeClass(id);
+    setTimeout(() => fillDetail(id), 500);
+}
+/**photo place / mobile */
 function addPhoto(){
     let forPhoto = document.createElement('div');
     forPhoto.id = "for-photo";
@@ -120,6 +147,7 @@ function addPhoto(){
     forPhoto.innerHTML = photo;
     document.getElementById('detailBody').prepend(forPhoto);
 }
+/**changing class on description */
 function changeClass(id){
     document.getElementById(id).classList.add('title-open');
     let titles = document.querySelectorAll('.title');
@@ -128,7 +156,7 @@ function changeClass(id){
         if (titles[a].id == id){
             for(let i=0;i<spans.length;i++){
                 if(spans[i].classList.contains('upper')) spans[i].classList.add('upper-open');
-                if(spans[i].classList.contains('little')) {spans[i].classList.remove('little-close'); spans[i].classList.add('little-open');};
+                if(spans[i].classList.contains('little')) {spans[i].classList.remove('little-close'); spans[i].classList.add('little-open')};
             }
         }else{
             for(let i=0;i<spans.length;i++){
@@ -137,8 +165,8 @@ function changeClass(id){
         }       
     }
 }
+/**removing class */
 function removeClass(id){
-    
     if (id){
         let elem = document.getElementById(id);
         elem.classList.remove('title-open');
@@ -161,28 +189,6 @@ function removeClass(id){
         }
     }
 }
-function includeCSS(url, media){
-    let style = document.createElement('link');
-    style.href = url;
-    style.rel = "stylesheet";
-    style.media = media || ""
-    document.head.appendChild(style);
-}
-function createBody(device){
-    let wrap = document.getElementById('wrapper')
-        switch (device) {
-            case 'pc': {
-                wrap.innerHTML = pcBody; 
-                includeCSS('/stylesheets/pc.css');
-                includeCSS("/stylesheets/min1000px.css", "screen and (min-width: 1000px)");
-                includeCSS("/stylesheets/min768max999.css", "screen and (min-width: 768px) and (max-width: 999px)");
-                includeCSS("/stylesheets/min500max767.css", "screen and (min-width: 500px) and (max-width: 767px)");
-                break;}
-            case 'mobile': {
-                wrap.innerHTML = mobileBody; 
-                includeCSS('/stylesheets/mobile.css'); 
-                break;}
-            default: wrap.innerHTML = pcBody; break;
-        }
-}
+
+
 
