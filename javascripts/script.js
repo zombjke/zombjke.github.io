@@ -78,7 +78,7 @@ function selectMenu(id){
         createSelector(id);
     }else if (selector && selector.parentElement.id == id){
         selector.parentElement.innerHTML = selector.innerHTML;
-        setTimeout(() => removeClass(), 300);
+        removeClass();
     } else {
         removeClass(selector.parentElement.id);
         selector.parentElement.innerHTML = selector.innerHTML;
