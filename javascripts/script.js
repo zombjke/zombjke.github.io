@@ -29,6 +29,11 @@ function createRoadMapMobile(){
        
     
 }
+function closeRoadMap(){
+    document.getElementById('roadMapId').remove();
+    document.getElementById('title-back').style.filter = "";
+    document.removeEventListener('click', function(event){cancelByClick(event, map)}, 2);
+}
 /**close roadmap by click outside the block */
 function cancelByClick(event, map){
     let searchPlace = document.getElementById('backplace');
@@ -41,9 +46,7 @@ function cancelByClick(event, map){
         let moreY = event.clientY > cordsPlace.y + cordsPlace.height;
 
         if (lessX || lessY || moreX || moreY){
-            document.getElementById('title-back').style.filter = "";
-            map.remove();
-            document.removeEventListener('click', function(event){cancelByClick(event, map)}, 2);
+            closeRoadMap();
         }
     }
 }

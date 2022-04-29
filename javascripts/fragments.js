@@ -1,7 +1,7 @@
 const roadmap = 
 `<div id="backplace" class="backplace">
     <div id="logo-roadmap"><span>roadmap</span></div>
-    <div id="exit-roadmap"><span>+</span></div>
+    <div id="exit-roadmap" onclick="closeRoadMap()"><span>+</span></div>
     <div id="backgroundpath" class="backgroundpath">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 637.96 235.69">
             <linearGradient id="gradient">
