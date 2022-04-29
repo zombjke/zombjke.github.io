@@ -135,9 +135,10 @@ function changeClass(id){
     }
 }
 function removeClass(id){
-    let elem = document.getElementById(id);
-    if (elem){
-        console.log(elem);
+    
+    if (id){
+        console.log(id);
+        let elem = document.getElementById(id);
         elem.classList.remove('title-open');
         let spans = elem.querySelectorAll('span');
         for(let i=0;i<spans.length;i++){
