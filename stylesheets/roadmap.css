@@ -19,9 +19,11 @@
     border-radius: 7px;
 }
 #exit-roadmap span{
-    position: absolute;
-    right: 22%;
-    top: -7%;
+    position: relative;
+
+    display: flex;
+    align-self: center;
+    
     font-size: 3em;
     transform: rotateZ(45deg);
 
