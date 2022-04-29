@@ -8,6 +8,8 @@
      color: rgb(1, 255, 86); 
 }
 #exit-roadmap{
+    display: flex;
+    align-items: center;
     color: white;
     text-align: center;
     position: absolute;
@@ -20,10 +22,10 @@
 }
 #exit-roadmap span{
     position: relative;
-
+    margin-left: 0.22em;
     display: flex;
     align-self: center;
-    
+
     font-size: 3em;
     transform: rotateZ(45deg);
 
