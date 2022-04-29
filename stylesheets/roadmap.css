@@ -20,15 +20,29 @@
     border: 1px solid rgb(255, 255, 255);
     border-radius: 7px;
 }
+#exit-roadmap:hover{
+    color: #ff0000;
+    border-color: #ff0000;
+    cursor:default;
+}
 #exit-roadmap span{
     position: relative;
     margin-left: 0.22em;
     display: flex;
     align-self: center;
-
     font-size: 3em;
     transform: rotateZ(45deg);
-
+}
+#exit-roadmap span:hover{
+    animation: screw 0.3s forwards ease-in-out;
+}
+@keyframes screw{
+    0%{
+        transform: rotateZ(45deg);
+    }
+    100%{
+        transform: rotateZ(135deg);
+    }
 }
 .dotsvg{    
     position: absolute;
