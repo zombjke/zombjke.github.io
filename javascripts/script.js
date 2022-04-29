@@ -80,8 +80,8 @@ function selectMenu(id){
         selector.parentElement.innerHTML = selector.innerHTML;
         removeClass();
     } else {
-        selector.parentElement.innerHTML = selector.innerHTML;
         removeClass(selector.parentElement.id);
+        selector.parentElement.innerHTML = selector.innerHTML;
         createSelector(id);
     }   
 
