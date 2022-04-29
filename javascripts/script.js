@@ -125,7 +125,7 @@ function changeClass(id){
         if (titles[a].id == id){
             for(let i=0;i<spans.length;i++){
                 if(spans[i].classList.contains('upper')) spans[i].classList.add('upper-open');
-                if(spans[i].classList.contains('little')) spans[i].classList.remove('little-close'); spans[i].classList.add('little-open');
+                if(spans[i].classList.contains('little')) {spans[i].classList.remove('little-close'); spans[i].classList.add('little-open');};
             }
         }else{
             for(let i=0;i<spans.length;i++){
