@@ -66,8 +66,8 @@ body{
 .back-col{
     display: flex;
     margin: 1vh 5vw 5vh 1vw;
-    min-height: 92vh;
-    max-height: 92vh;
+    min-height: 90vh;
+    max-height: 90vh;
     flex-direction: column;
     align-items: stretch;
     justify-content:space-around;
