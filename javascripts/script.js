@@ -95,7 +95,7 @@ function createSelector(id){
     selector.innerHTML = tmp;
     document.getElementById(id).append(selector);
     changeClass(id);
-    fillDetail(id);
+    setTimeout(() => fillDetail(id), 500);
 }
 
 function fillDetail(id){
