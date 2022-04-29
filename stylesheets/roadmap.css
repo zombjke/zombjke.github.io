@@ -28,6 +28,7 @@
     align-self: center;
     font-size: 3em;
     transform: rotateZ(45deg);
+    user-select: none;
 }
 #exit-roadmap span:hover{
     color: #ff0000;
