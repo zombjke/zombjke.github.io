@@ -135,6 +135,7 @@ function changeClass(id){
     }
 }
 function removeClass(elem){
+    console.log(elem);
     if (elem){
         elem.classList.remove('title-open');
         let spans = elem.querySelectorAll('span');
