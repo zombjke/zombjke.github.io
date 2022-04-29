@@ -358,15 +358,15 @@ const mobileBody =
    <span id="ofknow" class="little">of knowledge</span>
 </div>
 <div id="title-additional" class="title" onclick="createDetail_(2)">
-   <span id="knowledge" class="little">knowledge</span><br>
+   <span id="knowledge" class="little">knowledge</span>
    <span id="additional" class="upper">additional</span>
 </div>
 <div id="title-software" class="title" onclick="createDetail_(1)">
-   <span id="preferred" class="little">preferred</span><br>
+   <span id="preferred" class="little">preferred</span>
    <span id="software" class="upper">software</span>
 </div>
 <div id="title-about" class="title" onclick="createDetail_(3)">
-   <span id="about" class="upper">about</span><br>
+   <span id="about" class="upper">about</span>
    <span id="myself" class="little">myself</span>
 </div>
 
