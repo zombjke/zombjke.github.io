@@ -130,7 +130,6 @@ function changeClass(id){
         }else{
             for(let i=0;i<spans.length;i++){
                 if(spans[i].classList.contains('little')) spans[i].classList.add('little-close');
-                if(spans[i].classList.contains('upper')) spans[i].style.alignSelf = "center";
             }
         }       
     }
