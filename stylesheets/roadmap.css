@@ -17,14 +17,10 @@
     top: 0.2em;
     width: 3em;
     height: 3em;
-    border: 1px solid rgb(255, 255, 255);
+    
     border-radius: 7px;
 }
-#exit-roadmap:hover{
-    color: #ff0000;
-    border-color: #ff0000;
-    cursor:default;
-}
+
 #exit-roadmap span{
     position: relative;
     margin-left: 0.22em;
@@ -34,6 +30,8 @@
     transform: rotateZ(45deg);
 }
 #exit-roadmap span:hover{
+    color: #ff0000;
+    cursor:default;
     animation: screw 0.3s forwards ease-in-out;
 }
 @keyframes screw{
