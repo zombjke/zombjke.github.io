@@ -349,7 +349,10 @@ const aboutMyself =
 `;
 const photo = 
 `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 506 506">
-<circle cx="253" cy="253" r="253"/>
+<mask id="littleMask">
+    <circle cx="253" cy="253" r="253"/>
+</mask>
+<image xlink:href="/images/photo.jpg" mask="url(#littleMask)" />
 </svg>`;
 const mobileBody = 
 `<div id="title-back" class="back">
