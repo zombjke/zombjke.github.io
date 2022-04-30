@@ -384,7 +384,7 @@ const pcBody = `<div id="title-back" class="back">
 <div id="for-photo" class="for-photo">
     <svg xmlns="http://www.w3.org/2000/svg" width="506" height="506" viewBox="0 0 506 506">
     <radialGradient id="gradForPhoto" cx="50%" y="50%">
-        <stop offset="40%" stop-color="white"></stop>
+        <stop offset="90%" stop-color="white"></stop>
         <stop offset="100%" stop-color="black"></stop>
     </radialGradient>
     <mask id="littleMask">
