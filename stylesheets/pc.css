@@ -69,7 +69,7 @@
 }
 #detailBody:hover{
     overflow: auto;
-    margin-right: 9px;
+    margin-right: 0.16em;
 }
 .smallLi{
     font-size: 17.5px;

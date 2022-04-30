@@ -349,6 +349,10 @@ const aboutMyself =
 `;
 const photo = 
 `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 506 506">
+<radialGradient id="gradForPhoto" cx="50%" y="50%">
+        <stop offset="90%" stop-color="white"></stop>
+        <stop offset="100%" stop-color="black"></stop>
+    </radialGradient>
 <mask id="littleMask">
     <circle cx="253" cy="253" r="253"/>
 </mask>
@@ -379,7 +383,14 @@ const mobileBody =
 const pcBody = `<div id="title-back" class="back">
 <div id="for-photo" class="for-photo">
     <svg xmlns="http://www.w3.org/2000/svg" width="506" height="506" viewBox="0 0 506 506">
-        <circle cx="253" cy="253" r="253"/>
+    <radialGradient id="gradForPhoto" cx="50%" y="50%">
+        <stop offset="40%" stop-color="white"></stop>
+        <stop offset="100%" stop-color="black"></stop>
+    </radialGradient>
+    <mask id="littleMask">
+    <circle cx="253" cy="253" r="253"/>
+    </mask>
+    <image xlink:href="/images/photo.jpg" mask="url(#littleMask)" />
     </svg>
 </div>    
 <div id="back-col-1" class="back-col">

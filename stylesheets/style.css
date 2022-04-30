@@ -25,9 +25,17 @@ a:active{
 }
 
 .for-photo svg{
-     fill: black; 
+    
+       fill: url('#gradForPhoto') 
 }
 
+.for-photo image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background: radial-gradient(white, transparent 50%);
+}
 
 .upper{
     font-family: Graphik-Black;
