@@ -29,6 +29,8 @@ function createBody(device){
             default: wrap.innerHTML = pcBody; break;
         }
 }
+
+
 /**including styles on html function */
 function includeCSS(url, media){
     let style = document.createElement('link');
