@@ -60,7 +60,7 @@ function createRoadMapMobile(){
     
 }
 /**close roadmap by click outside the block */
-function cancelByClick(event, map){
+function cancelByClick(event){
     let searchPlace = document.getElementById('backplace');
     if (searchPlace){
         let cordsPlace = searchPlace.getBoundingClientRect();
