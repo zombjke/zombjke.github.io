@@ -31,7 +31,7 @@ function createBody(device){
 }
 
 
-/**including styles on html function */
+/**including styles on html-page*/
 function includeCSS(url, media){
     let style = document.createElement('link');
     style.href = url;
