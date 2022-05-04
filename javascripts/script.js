@@ -1,6 +1,6 @@
 /**choose platform */
 window.onload = function(){
-    let userAgentInfo = navigator.userAgent;
+    let userAgentInfo = navigator.userAgentData;
     let Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone"];
     let flag = true;
         for (let i = 0; i < Agents.length; i++) {
